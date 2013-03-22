@@ -5,7 +5,6 @@ import java.net.Socket;
 import java.util.Arrays;
 
 import com.lohika.itkachuk.javatc.lesson4.server.FileTransferServer;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,14 +26,14 @@ public class FileTransferClient {
     }
 
     private void validateInputs() throws IllegalArgumentException {
-        if (StringUtils.isEmpty(host)) {
+        if (isEmpty(host)) {
             throw new IllegalArgumentException("Input error: server host name can not be empty");
         }
         if (port < 1 || port > 65535) {
             throw new IllegalArgumentException("Input error: server port should be from range 1-65535");
         }
 
-        if (StringUtils.isEmpty(filePath)) {
+        if (isEmpty(filePath)) {
             throw new IllegalArgumentException("Input error: file path can not be empty");
         }
         if (filePath.length() > 260) {
@@ -45,12 +44,22 @@ public class FileTransferClient {
         if (!fileToSend.isFile()) {
             throw new IllegalArgumentException("Input error: \"" + filePath + "\" is not a file");
         }
-        if (StringUtils.isNotEmpty(targetPath)) {
+        if (isNotEmpty(targetPath)) {
             if ((targetPath.length() + fileToSend.getName().length()) > 260) {
                 throw new IllegalArgumentException("Input error: the total path length of target file can not be more than 260 characters");
             }
         }
     }
+
+    // Copied source from Apache Commons lib, since we don't want to have any dependencies for this simple class
+    private boolean isEmpty(CharSequence cs) {
+        return cs == null || cs.length() == 0;
+    }
+
+    private boolean isNotEmpty(CharSequence cs) {
+        return !isEmpty(cs);
+    }
+    //-------------------------------------------
 
     public void uploadFile() throws IOException {
         File file = new File(filePath);
@@ -62,7 +71,7 @@ public class FileTransferClient {
             oos = new ObjectOutputStream(socket.getOutputStream());
 
             oos.writeObject(file.getName());
-            if (StringUtils.isNotEmpty(targetPath)) {
+            if (isNotEmpty(targetPath)) {
                 oos.writeObject(targetPath);
             } else {
                 oos.writeObject(FileTransferServer.DEFAULT_TARGET_PATH);
@@ -87,7 +96,7 @@ public class FileTransferClient {
     public static void main(String[] args) throws Exception {
 
         if (args.length != 3 && args.length != 4) {
-            System.out.println("Usage: java FileTransferClient <host>:<port> <file path> [<target path>]");
+            System.out.println("Usage: java FileTransferClient <host> <port> <file path> [<target path>]");
             System.exit(1);
         }
 
