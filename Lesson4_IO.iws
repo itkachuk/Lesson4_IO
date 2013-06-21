@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef843f7e-e866-441a-8e60-000a5ddd1239" name="Default" comment="Fixed following notes:&#10;1. Class import org.apache.commons.lang3.StringUtils not provided within package - removed dependencies on Apache Commons library, copied sources of needed methods into the FileTransferClient class.&#10;2. Parsing input arguments of client class didn't match the printed &quot;Usage&quot; text. Fixed usage text.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileTransferServer/src/com/lohika/itkachuk/javatc/lesson4/server/FileTransferServer.java" afterPath="$PROJECT_DIR$/FileTransferServer/src/com/lohika/itkachuk/javatc/lesson4/server/FileTransferServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lesson4_IO.ipr" afterPath="$PROJECT_DIR$/Lesson4_IO.ipr" />
+    <list default="true" id="ef843f7e-e866-441a-8e60-000a5ddd1239" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.form" afterPath="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lesson4_IO.iws" afterPath="$PROJECT_DIR$/Lesson4_IO.iws" />
     </list>
     <ignored path="Lesson4_IO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ef843f7e-e866-441a-8e60-000a5ddd1239" time="1371805550478" ignored="false" />
+    <file path="/Dummy.txt" changelist="ef843f7e-e866-441a-8e60-000a5ddd1239" time="1371805679786" ignored="false" />
     <file path="/FileTransferUIClient.java" changelist="ef843f7e-e866-441a-8e60-000a5ddd1239" time="1371798284445" ignored="false" />
     <file path="/FileTransferUIForm.java" changelist="ef843f7e-e866-441a-8e60-000a5ddd1239" time="1371805179994" ignored="false" />
     <file path="/fragment.java" changelist="ef843f7e-e866-441a-8e60-000a5ddd1239" time="1371216815137" ignored="false" />
@@ -69,68 +65,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIClient.java" line="74" class="com.lohika.itkachuk.javatc.lesson4.client.ui.FileTransferUIClient" package="com.lohika.itkachuk.javatc.lesson4.client.ui">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.java" line="87" class="com.lohika.itkachuk.javatc.lesson4.client.ui.FileTransferUIForm$2" package="com.lohika.itkachuk.javatc.lesson4.client.ui">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.java" line="107" class="com.lohika.itkachuk.javatc.lesson4.client.ui.FileTransferUIForm$3" package="com.lohika.itkachuk.javatc.lesson4.client.ui">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIClient.java" line="134" class="com.lohika.itkachuk.javatc.lesson4.client.ui.FileTransferUIClient" package="com.lohika.itkachuk.javatc.lesson4.client.ui">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -152,7 +86,7 @@
       <file leaf-file-name="FileTransferClient.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/FileTransferClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="3310" selection-end="3310" vertical-scroll-proportion="3.284501">
+            <state line="23" column="21" selection-start="579" selection-end="579" vertical-scroll-proportion="0.6496815">
               <folding />
             </state>
           </provider>
@@ -211,9 +145,9 @@
         <option value="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileUploadWorker.java" />
         <option value="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIClient.java" />
         <option value="$PROJECT_DIR$/FileTransferServer/src/com/lohika/itkachuk/javatc/lesson4/server/FileTransferServer.java" />
-        <option value="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.form" />
         <option value="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.java" />
         <option value="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/FileTransferClient.java" />
+        <option value="$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.form" />
       </list>
     </option>
   </component>
@@ -597,15 +531,19 @@
       <created>1363944704494</created>
       <updated>1363944704494</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added GUI client (used Intellij UI designer).&#10;Updated server part to handle file transfer interrupting.&#10;TODO: improve connection management.&#10;">
+      <created>1371805683617</created>
+      <updated>1371805683617</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17953669" sideWeight="0.68363136" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5252525" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17889318" sideWeight="0.68363136" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5240715" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.68363136" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.79917467" order="1" side_tool="false" content_ui="tabs" />
@@ -618,7 +556,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.79972565" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21879022" sideWeight="0.68363136" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21879022" sideWeight="0.4759285" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31636864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -673,7 +611,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed following notes:&#10;1. Class import org.apache.commons.lang3.StringUtils not provided within package - removed dependencies on Apache Commons library, copied sources of needed methods into the FileTransferClient class.&#10;2. Parsing input arguments of client class didn't match the printed &quot;Usage&quot; text. Fixed usage text.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GUI client (used Intellij UI designer).&#10;Updated server part to handle file transfer interrupting.&#10;TODO: improve connection management.&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -690,6 +628,7 @@
     <MESSAGE value="Added server/client modules" />
     <MESSAGE value="Added Idea project file" />
     <MESSAGE value="Fixed following notes:&#10;1. Class import org.apache.commons.lang3.StringUtils not provided within package - removed dependencies on Apache Commons library, copied sources of needed methods into the FileTransferClient class.&#10;2. Parsing input arguments of client class didn't match the printed &quot;Usage&quot; text. Fixed usage text.&#10;" />
+    <MESSAGE value="Added GUI client (used Intellij UI designer).&#10;Updated server part to handle file transfer interrupting.&#10;TODO: improve connection management.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -775,18 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="42" selection-start="5899" selection-end="5899" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="42" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
@@ -800,9 +727,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="42" selection-start="5899" selection-end="5899" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/ui/FileTransferUIForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FileTransferClient/src/com/lohika/itkachuk/javatc/lesson4/client/FileTransferClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="3310" selection-end="3310" vertical-scroll-proportion="3.284501">
+        <state line="23" column="21" selection-start="579" selection-end="579" vertical-scroll-proportion="0.6496815">
           <folding />
         </state>
       </provider>
