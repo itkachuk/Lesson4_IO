@@ -76,32 +76,48 @@ public class FileTransferServer extends Thread {
             }
         }
 
-        // 3. Read file to the end.
-        Integer bytesRead;
-        do {
-            o = ois.readObject();
+        try {
+            // 3. Read file to the end.
+            Integer bytesRead;
+            do {
+                o = ois.readObject();
 
-            if (!(o instanceof Integer)) {
-                throwException("File transfer error: buffer size wasn't received");
+                if (!(o instanceof Integer)) {
+                    throwException("File transfer error: buffer size wasn't received");
+                }
+
+                bytesRead = (Integer)o;
+
+                o = ois.readObject();
+
+                if (!(o instanceof byte[])) {
+                    throwException("File transfer error: bytes array reading failed");
+                }
+
+                buffer = (byte[])o;
+
+                // 4. Write data to output file.
+                fos.write(buffer, 0, bytesRead);
+            } while (bytesRead == BUFFER_SIZE);
+        } catch (IOException ioe) {
+            // if file transfer was interrupted by client, or by other reason, we need to remove partially loaded file (since we are not supporting resume download)
+            fos.close();
+            File file;
+            if (targetPath.equals(DEFAULT_TARGET_PATH)) {
+                file = new File(fileName); // use current directory
+            } else {
+                file = new File(targetPath + File.separator + fileName); // use received target path
             }
-
-            bytesRead = (Integer)o;
-
-            o = ois.readObject();
-
-            if (!(o instanceof byte[])) {
-                throwException("File transfer error: bytes array reading failed");
-            }
-
-            buffer = (byte[])o;
-
-            // 4. Write data to output file.
-            fos.write(buffer, 0, bytesRead);
-        } while (bytesRead == BUFFER_SIZE);
-
-        fos.close();
-        ois.close();
-        oos.close();
+            try {
+                file.delete();
+            } catch (Exception e) {}
+        } finally {
+            try {
+                fos.close();
+                ois.close();
+                oos.close();
+            } catch (Exception e) {}
+        }
     }
 
     public static void throwException(String message) throws Exception {
