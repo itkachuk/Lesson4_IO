@@ -79,12 +79,13 @@ public class FileTransferUIClient extends SwingWorker<Boolean, Integer> {
         ObjectOutputStream oos = null;
 
         uiForm.getUploadButton().setEnabled(false);
-        uiForm.getCancelButton().setEnabled(true);
 
         try {
             Socket socket = new Socket(serverHost, serverPort);
             ois = new ObjectInputStream(socket.getInputStream());
             oos = new ObjectOutputStream(socket.getOutputStream());
+
+            uiForm.getCancelButton().setEnabled(true);
 
             oos.writeObject(file.getName());
             if (isNotEmpty(targetPath)) {
@@ -145,12 +146,22 @@ public class FileTransferUIClient extends SwingWorker<Boolean, Integer> {
                 uiForm.getProgressBar().setValue(0);
                 uiForm.getUploadingStatus().setText("file uploading was interrupted");
             }
+
+        } catch (InterruptedException ie) {
+            JOptionPane.showMessageDialog(uiForm,
+                    ie.getMessage(),
+                    "File uploading interrupted",
+                    JOptionPane.ERROR_MESSAGE);
+            //ie.printStackTrace();
+        } catch (ExecutionException ee) {
+            JOptionPane.showMessageDialog(uiForm,
+                    ee.getMessage(),
+                    "File uploading error",
+                    JOptionPane.ERROR_MESSAGE);
+            //ee.printStackTrace();
+        } finally {
             uiForm.getUploadButton().setEnabled(true);
             uiForm.getCancelButton().setEnabled(false);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } catch (ExecutionException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
     }
 
